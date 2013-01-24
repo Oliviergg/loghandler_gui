@@ -6,7 +6,7 @@ var MainController={
   server: function(id){
     s=new Server({id:id});
     s.fetch({async:false})
-    var ws = new Socket(["ws://",s.get("name"),":",s.get("port")].join(""));
+    var ws = new Socket(["ws://",s.get("url"),":",s.get("port")].join(""));
     ws.onmessage = function(evt) {
       app.global.logDetails.add(JSON.parse(evt.data))
       console.log("-Message: " + evt.data); 
