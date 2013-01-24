@@ -1,0 +1,29 @@
+Je suis un loghandler_client, je peux me reconnecter au serveur si la connection avec celui ci est rompu.
+Je suis un loghandler_client, je communique de manière sécurisé avec le server.
+Je suis utilisateur, je m'authentifie pour accéder à mes données.
+Je suis utilisateur, je peux vider la log affiché
+Je suis utilisateur, je déclare les serveurs auquel je peux accéder
+
+
+
+Je suis un loghandler_client, je peux écouter plusieurs fichier
+Je suis un loghandler_client, je suis paramétré par un fichier de configuration
+Je suis un loghandler_client, j'ai un id unique qui peut m'etre fourni, ou que je peux déterminer.
+
+
+Je suis loghandler_server, j'ai un fichier de configuration
+Je suis loghandler_server, je fourni un accès à mes données par web socket
+
+
+Je suis loghandler_gui, je connais l'ensemble des serveurs auquelle je peux me connecter.
+Je suis loghandler_gui, je fournis un websocket pour mon interface web. 
+Je suis loghandler_gui, j'aggrege les données des websocket server
+Je suis loghandler_gui, je gere un persistance de donnée sur environ 10mn/10000 lignes
+
+
+Je suis utilisateur, je déclare pour chaque serveur une clef privée
+Je suis utilisateur, je peux voir les logs d'un fichier ou de plusieurs fichiers.
+Je suis utilisateur, je peux mettre en évidence des lignes ayant un mot clef
+Je suis utilisateur, je peux recevoir par mail, sms, notification des alertes en fonction de mots clef, de gravité
+Je suis utilisateur, je vois le contexte de la log autour des lignes choisi.
+
