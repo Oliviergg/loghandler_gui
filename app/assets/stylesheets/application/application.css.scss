@@ -1,0 +1,19 @@
+body {
+  
+}
+table#log_details {
+  font-family: courier;
+  border:none;
+  .severity.error{
+    color: red;
+  }
+  .severity.warning{
+    color: orange;
+  }
+
+  tr {
+    td {
+      padding: 0px 5px 0px 0px;
+    }
+  }
+}

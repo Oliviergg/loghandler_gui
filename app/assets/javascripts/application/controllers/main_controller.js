@@ -4,7 +4,6 @@ var MainController={
       
   },
   server: function(id){
-    debugger
     s=new Server({id:id});
     s.fetch({async:false})
     var ws = new Socket(["ws://",s.get("name"),":",s.get("port")].join(""));
