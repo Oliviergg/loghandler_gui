@@ -45,3 +45,6 @@ gem 'nokogiri'
 gem 'json'
 
 gem 'awesome_print'
+gem 'friendly_id'
+
+gem 'loghandler', '>= 0.0.3'

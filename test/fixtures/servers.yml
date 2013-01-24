@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  desc: MyString
+  url: MyString
+  port: 1
+
+two:
+  desc: MyString
+  url: MyString
+  port: 1

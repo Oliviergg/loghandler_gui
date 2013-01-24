@@ -1,0 +1,11 @@
+wait: 30
+timeout: 30
+max_conns: 1024
+require: []
+
+environment: staging
+max_persistent_conns: 512
+servers: 3
+daemonize: true
+chdir: /home/loghandler_gui/loghandler_gui
+socket: /tmp/thin_loghandler.sock 

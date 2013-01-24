@@ -1,4 +1,7 @@
 LoghandlerGui::Application.routes.draw do
+
+  resources :servers, only:[:show]
+
   root :to => "homepage#index"
 
   # The priority is based upon order of creation:

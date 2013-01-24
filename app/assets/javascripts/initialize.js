@@ -18,6 +18,7 @@ function timeAgo(date){
   }
 
 }
+Socket = "MozWebSocket" in window ? MozWebSocket : WebSocket;
 $(function() {
   Backbone.Model.prototype._super = function(funcName){
       return this.constructor.__super__[funcName].apply(this, _.rest(arguments));
@@ -46,21 +47,6 @@ $(function() {
   });
 
   app.addInitializer(function(options){
-    var Socket = "MozWebSocket" in window ? MozWebSocket : WebSocket;
-    var ws = new Socket("ws://localhost:"+8080+"/");
-    ws.onmessage = function(evt) {
-      app.global.logDetails.add(JSON.parse(evt.data))
-      console.log("-Message: " + evt.data); 
-    };
-    ws.onclose = function() { 
-      console.log("closed");
-      // debug("-socket closed"); 
-    };
-    ws.onopen = function() { 
-      console.log("connected");
-      // debug("connected...");
-      //    // this.send("-hello server");
-     };
   });
   
   
@@ -69,13 +55,7 @@ $(function() {
   // app=new App.Router();
   app.root = "/";
 
-
-
-
-
-
   $(document).ajaxError(function(event, request) {
-      mixpanel.track("ErrorAjax",{"statusText":request.statusText});
   });
 
 
